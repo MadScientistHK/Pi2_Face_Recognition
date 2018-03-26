@@ -66,4 +66,5 @@ N'oubliez pas de préciser le path de votre dataset sinon vous aurez des erreurs
 
 * Si personne n'est reconnu au moment de l'ajout, le programme freeze.
 * Si vous rajoutez manuellement des personnes dans le dataset, le programme ne démarre plus.
+* Après une erreur, il faut redémarrer le noyau python.
 
