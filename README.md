@@ -8,7 +8,7 @@ Face Recognition program for InMoov
 
 Pi² Project ESILV 2017-2018 Team 28
 
-Made by Martin Jérémy, Guillaume Thomas, Mézouar Chloé et Ekhteraei Aria.
+Made by Martin Jérémy, Guillaume Thomas, Mézouar Chloé and Ekhteraei Aria.
 
 Our project is for the humanoïd InMoov Robot, we had to implement a face recognition that is able to 
 recognize around 50 differents persons and able to ask if there is an unknown person who wants to be add.
@@ -61,3 +61,9 @@ Pour ce qui est de trouver un visage ou une autre partie du corps utilisez OpenC
 Pour plus d'information n'hésitez pas à suivre les liens que j'ai laissé ;)
 
 N'oubliez pas de préciser le path de votre dataset sinon vous aurez des erreurs, assurez vous aussi d'avoir vos drivers de caméra à jour et actifs.
+
+# Les à améliorer connus
+
+* Si personne n'est reconnu au moment de l'ajout, le programme freeze
+* Si vous rajoutez manuellement des personnes dans le dataset, le programme ne démarre plus
+
