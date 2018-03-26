@@ -62,8 +62,8 @@ Pour plus d'information n'hésitez pas à suivre les liens que j'ai laissé ;)
 
 N'oubliez pas de préciser le path de votre dataset sinon vous aurez des erreurs, assurez vous aussi d'avoir vos drivers de caméra à jour et actifs.
 
-# Les à améliorer connus
+# Les points à améliorer
 
-* Si personne n'est reconnu au moment de l'ajout, le programme freeze
-* Si vous rajoutez manuellement des personnes dans le dataset, le programme ne démarre plus
+* Si personne n'est reconnu au moment de l'ajout, le programme freeze.
+* Si vous rajoutez manuellement des personnes dans le dataset, le programme ne démarre plus.
 
