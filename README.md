@@ -52,9 +52,9 @@ if needed :
 # La Reconnaissance
 
 Il y a 3 versions de cette reconnaissance faciale :
-* 1-Reconnait toutes les personnes qui sont présentes face caméra par rapport à un dataset déja existant.
-* 2-Reconnait seulement la personne qui se trouve au plus proche de la caméra (ça évite de reconnaitre les personnes qui ne font que passer).
-* 3-Exactement comme la version 2, mais qui à maintenant la fonctionnalité d'enregistrer, si elle le souhaite, une personne inconnue en direct 
+* 1-Reconnait toutes les personnes qui sont présentes face caméra par rapport à un dataset déja existant.Cette version nécessite les scripts suivant : Face_Recognition_V2, Take Face, generate_encoding.
+* 2-Reconnait seulement la personne qui se trouve au plus proche de la caméra (ça évite de reconnaitre les personnes qui ne font que passer). Cette version nécessite les scripts suivant : Face_Recognition_V2, Take Face, generate_encoding.
+* 3-Exactement comme la version 2, mais qui à maintenant la fonctionnalité d'enregistrer, si elle le souhaite, une personne inconnue en direct. Cette version ne nécessite que son propre script.
 
 Pour ce qui est de trouver un visage ou une autre partie du corps utilisez OpenCV -> go google. 
 
