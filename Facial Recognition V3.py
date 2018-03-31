@@ -3,7 +3,7 @@
     
     Pi² Project ESILV 2017-2018 Team 28
     
-    Made by Martin Jérémy, Guillaume Thomas, Mézouar Chloé et Ekhteraei Aria.
+    Made by Martin Jérémy, Guillaume Thomas, Mézouar Chloé and Ekhteraei Aria.
     
     Our project is for the humanoïd InMoov Robot, we had to implement a face recognition that is able to 
     recognize around 50 differents persons and able to ask if there is an unknown person who wants to be add.
@@ -19,10 +19,13 @@ from queue import Queue
 
 def knownFaces():
     """Load a list of each person of your dataset ***** Replace Pi2/tmp_dataset by your path to your dataset"""
-    list_face = os.listdir('Pi2/tmp_dataset')
     known_faces = []
+    list_face = os.listdir('Pi2/tmp_dataset')
+    if(len(list_face)==0):return known_faces
+    """We sort to avoid crash during analyses"""
+    list_face.sort()
     for face in list_face:
-        #Encode each face of the folder *****  change your path again
+        """Encode each face of the folder *****  change your path again"""
         faceLoad = face_recognition.load_image_file("Pi2/tmp_dataset/"+face)
         known_faces.append(face_recognition.face_encodings(faceLoad)[0])
     """Return a tab with the encoded faces"""
@@ -92,7 +95,7 @@ def fr():
         """ Grab a single frame of video"""      
         ret, frame = video_capture.read()
         """ Resize frame of video to 1/4 size for faster face recognition processing"""
-        small_frame = cv2.resize(frame, (0,0), fx=0.25, fy=0.25)
+        small_frame = cv2.resize(frame, (0,0), fx=0.25, fy=0.25)    
         """ Only process every other frame of video to save time"""
         if process_this_frame:
             """ Find the nearest face and face encodings in the current frame of video"""
@@ -109,6 +112,7 @@ def fr():
                 name = "Unknown1234"
                 """Change the path here too"""
                 list_face = os.listdir('Pi2/tmp_dataset')
+                list_face.sort()
                 """Get the name of the face if known"""
                 for face in list_face:
                     for i in range(len(match)):
